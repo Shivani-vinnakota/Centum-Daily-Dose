@@ -1,0 +1,8 @@
+127.0.0.1 - - [19/Dec/2023:19:44:29 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [19/Dec/2023:19:44:30 +0530] "GET /EmployeeJSPProject/ HTTP/1.1" 200 566
+0:0:0:0:0:0:0:1 - - [19/Dec/2023:19:44:30 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [19/Dec/2023:19:44:34 +0530] "GET /EmployeeJSPProject/findAll.jsp HTTP/1.1" 200 852
+0:0:0:0:0:0:0:1 - - [19/Dec/2023:19:44:37 +0530] "GET /EmployeeJSPProject/index.jsp HTTP/1.1" 200 566
+0:0:0:0:0:0:0:1 - - [19/Dec/2023:19:44:39 +0530] "POST /EmployeeJSPProject/index.jsp HTTP/1.1" 500 2673
+0:0:0:0:0:0:0:1 - - [19/Dec/2023:19:45:03 +0530] "POST /EmployeeJSPProject/index.jsp HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [19/Dec/2023:19:45:03 +0530] "GET /EmployeeJSPProject/findAll.jsp HTTP/1.1" 200 984

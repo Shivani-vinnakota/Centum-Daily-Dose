@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .signup-container {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            margin: 100px auto;
+            padding: 20px;
+        }
+
+        .signup-container h2 {
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            text-align: left;
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            width: 80%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .btn-signup {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .btn-signup:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="signup-container">
+          <fieldset>
+        <h2>Sign Up</h2>
+        <form action="register" target="_blank" method="post">
+           <img src="D:\signup.jpg" alt="money" width="100" height="100">
+            <div class="form-group">
+                <label for="accholder_name"> Account Holder Name:</label>
+            <input type="text" id="alphabeticInput" name="accholder_name" placeholder="Eg:John wixxxxxdom" oninput="this.value = this.value.replace(/[^A-Za-z]/g, '');">
+            </div>
+            <div class="form-group">
+                <label for="accno"> Account Number:</label>
+                <input type="text" id="numericInput" name="accno" maxlength="15" placeholder="Eg:3xxxxxxxxxxx342" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+            </div>
+            <div class="form-group">
+                <label for="card_Number"> Card Number:</label>
+                <input type="text" id="numericInput" name="card_Number" placeholder="Eg:6xxx3xxx0xxx7xxx" maxlength="16" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+            </div>
+            <div class="form-group">
+                <label for="cvv">Enter the Cvv:</label>
+                <input type="text" id="numericInput" name="cvv" placeholder="Eg:5x7" minlength="3" maxlength="3" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+            </div>
+            <div class="form-group">
+                <label for="validthru">Enter the Valid-Thru:</label>
+                 <input type="month" id="selectMonth" name="valid_Thru" placeholder="Eg:05/2023" name="month"> 
+            </div>
+           
+            <button type="submit" class="btn-signup">Sign Up</button>
+        </form>
+     </fieldset>
+    </div>
+</body>
+</html>

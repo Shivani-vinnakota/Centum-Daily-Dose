@@ -1,0 +1,107 @@
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atm Transactions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://static.vecteezy.com/system/resources/previews/001/988/451/original/seamless-money-background-vector.jpg'); /* Background image URL */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            width: 80%;
+            max-width: 400px;
+            padding: 20px;
+            background-color: #ffffff; /* Container background color */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for container */
+            text-align: center;
+        }
+        h2 {
+            font-size: 28px;
+            color: #0074d9; /* Heading color */
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            font-size: 18px;
+            color: #333; /* Label text color */
+        }
+        /* Custom button styles with animations */
+        .custom-button {
+            display: inline-block;
+            width: 45%; /* Fixed width for all buttons */
+            height: 50px; /* Fixed height for all buttons */
+            background-color: #4CAF50; /* Parrot green button background color */
+            color: #fff; /* Button text color */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 20px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            margin: 5px;
+        }
+        .custom-button:hover {
+            background-color: #45a049; /* Hover background color */
+            transform: scale(1.05); /* Hover animation: slightly scale up */
+        }
+        .custom-button:active {
+            transform: scale(0.95); /* Click animation: slightly scale down */
+        }
+        /* Bank logo style */
+        .bank-logo {
+            width: 100px; /* Adjust logo width as needed */
+            height: auto;
+            margin-bottom: 20px;
+        }
+        /* Button container for grid layout */
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://img.freepik.com/premium-vector/bank-building-with-columns-government-building-financial-house-building-facade_101087-624.jpg" alt="Bank Logo" class="bank-logo"> <!-- Bank logo image -->
+        <h2>Please Select the Transaction Type</h2>
+        <!-- Button container for grid layout -->
+        <div class="button-container">
+            <!-- Customized buttons -->
+            <button class="custom-button" type="button" onclick="deposit_1.html">Deposit</button>
+            <button class="custom-button" type="button" onclick="handleTransactionSelection('checkBalance')">Check Balance</button>
+            <button class="custom-button" type="button" onclick="handleTransactionSelection('miniStatement')">Mini Statement</button>
+            <button class="custom-button" type="button" onclick="handleTransactionSelection('withdraw')">Withdraw</button>
+        </div>
+    </div>
+
+    <script>
+        function handleTransactionSelection(transactionType) {
+            if (transactionType === "deposit") {
+                // Redirect or handle deposit logic here
+                alert("Redirecting to Deposit Page");
+            } else if (transactionType === "checkBalance") {
+                // Redirect or handle check balance logic here
+                alert("Redirecting to Check Balance Page");
+            } else if (transactionType === "miniStatement") {
+                // Redirect or handle mini statement logic here
+                alert("Redirecting to Mini Statement Page");
+            } else if (transactionType === "withdraw") {
+                // Redirect or handle withdraw logic here
+                alert("Redirecting to Withdraw Page");
+            }
+        }
+    </script>
+</body>
+</html>

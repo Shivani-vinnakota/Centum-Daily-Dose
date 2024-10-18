@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thankyou Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            
+            background-image: url('atm2.jpg');
+            background-size: cover; /* Scale the image to cover the entire background */
+            background-repeat: no-repeat; /* Prevent image repetition */
+            background-attachment: fixed; /* Keep the background fixed while scrolling */
+            background-position: center; /* Center the background image */
+            background-size: 100% 100%;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .login-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+	    max-height: 500px;
+            margin: 100px auto;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        .login-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .form-group {
+            margin-bottom: 30px;
+        }
+
+        .form-group label {
+            display: block;
+            text-align: left;
+            margin-bottom: 10px;
+            color: #555;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .form-group input {
+            width: 80%;
+            padding: 12px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .btn-login {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .btn-login:hover {
+            background-color: #45a049;
+        }
+
+        .logo {
+            width: 140px;
+            height: 140px;
+            margin: 0 auto 30px;
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 10;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+    <fieldset>
+         <img src="D:\card.jpg" alt="login" width="100" height="100">;
+        <h2>Thank You for using ATM</h2>
+          <form action="index.html" method="post">
+			  <div id="successMessage"></div>
+			  <script>
+    // Function to display the success message
+    function displaySuccessMessage() {
+        var successMessage = document.getElementById("successMessage");
+        var messageFromServer = "Deposit of $" + amount.toString() + " was successful."
+       // var messageFromServer = "<%= request.getAttribute('successMessage') %>";
+
+        // Set the innerHTML of the div with the success message
+        successMessage.innerHTML = messageFromServer;
+    }
+
+    // Call the function when the page loads
+    window.onload = displaySuccessMessage;
+    
+    
+</script>
+            <button class="btn-login" name="submitInput">Go Back</button>
+            
+        </form>
+    </fieldset>
+    </div>
+</body>
+</html>
